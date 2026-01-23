@@ -2,49 +2,46 @@
 
 ## Project
 
-Polyplot landing page for Polymarket Builder Program application.
-Domain: polyplot.xyz
+Polyplot landing page. Domain: polyplot.xyz
 
 ## Commands
 
 ```bash
-npm run dev       # Dev server at localhost:5173
+npm run dev       # localhost:5173
 npm run build     # Build to /dist
-npm run preview   # Preview build
 ```
 
 ## Tech Stack
 
-React 18, TypeScript, Vite, Tailwind CSS, Lucide React, Framer Motion, Supabase
+React, TypeScript, Vite, Tailwind CSS, Lucide React, Framer Motion
 
 ## Colors
 
 ```
-Primary: #8B5CF6 (purple) → #06B6D4 (cyan)
+Brand gradient: #8B5CF6 (purple) → #06B6D4 (cyan)
 Background: #0B0B12 (base), #12121A (card)
-Long: #22C55E, Short: #EF4444
-Text: #FFFFFF (primary), #A1A1AA (secondary), #71717A (muted)
+Long: #FE9508 (amber)
+Short: #8B5CF6 (purple)
+Text: #FFFFFF, #A1A1AA, #71717A
 ```
 
 ## Code Style
 
-- Functional components with hooks, no class components
-- Tailwind utilities, no inline styles
-- PascalCase for components: `HeroSection.tsx`
-- Section padding: `py-20 px-4`, max width: `max-w-6xl mx-auto`
+- Functional components, Tailwind utilities
+- PascalCase components: `HeroSection.tsx`
+- Section padding: `py-20 px-4`, max: `max-w-6xl mx-auto`
 
-## Key Patterns
+## Patterns
 
 ```tsx
 // Gradient text
 <span className="bg-gradient-to-r from-primary-purple to-primary-cyan bg-clip-text text-transparent">
 
-// Gradient button
-<button className="bg-gradient-to-r from-primary-purple to-primary-cyan text-white rounded-lg">
+// Long button (amber)
+<button className="bg-long text-white">Buy Long 👍</button>
 
-// Gradient border
-<div className="p-[1px] bg-gradient-to-r from-primary-purple to-primary-cyan rounded-lg">
-  <div className="bg-bg-card rounded-lg">
+// Short button (purple)  
+<button className="bg-short text-white">Buy Short 👎</button>
 ```
 
 ## Structure
@@ -52,13 +49,8 @@ Text: #FFFFFF (primary), #A1A1AA (secondary), #71717A (muted)
 ```
 src/components/   # HeroSection, SolutionSection, HowItWorksSection, CTASection, Footer
 src/assets/       # polyplot-logo.jpg
-src/lib/          # supabase.ts
-api/              # waitlist.ts (Vercel serverless)
 ```
 
-## Notes
+## Links
 
-- Logo is JPEG: `/src/assets/polyplot-logo.jpg`
-- Waitlist form POSTs to `/api/waitlist`
-- Env vars need `VITE_` prefix for client access
-- X link: https://x.com/0xPolyplot
+- X: https://x.com/0xPolyplot
