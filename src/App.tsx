@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import SolutionSection from './components/SolutionSection'
 import HowItWorksSection from './components/HowItWorksSection'
+import CTASection from './components/CTASection'
 
 function App() {
   return (
@@ -15,21 +16,7 @@ function App() {
       <HowItWorksSection />
 
       {/* CTA Section */}
-      <section id="cta" className="py-20 px-4 bg-bg-card">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Get Started
-          </h2>
-          <div className="flex gap-4 justify-center">
-            <button className="bg-long text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-              Buy Long 👍
-            </button>
-            <button className="bg-short text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-              Buy Short 👎
-            </button>
-          </div>
-        </div>
-      </section>
+      <CTASection />
 
       {/* Footer */}
       <footer className="py-12 px-4 border-t border-gray-800">
