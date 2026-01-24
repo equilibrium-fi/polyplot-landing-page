@@ -44,7 +44,7 @@ export default function HeroSection() {
                     {/* Join Waitlist button - gradient background */}
                     <button
                         onClick={() => scrollToSection("cta")}
-                        className="px-8 py-4 rounded-lg font-semibold text-white text-lg bg-gradient-to-r from-primary-purple to-accent-amber hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                        className="px-8 py-4 rounded-lg font-semibold text-white text-lg bg-gradient-to-r from-primary-purple to-accent-amber hover:opacity-90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
                     >
                         Join Waitlist
                     </button>
