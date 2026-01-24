@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection'
 import SolutionSection from './components/SolutionSection'
+import HowItWorksSection from './components/HowItWorksSection'
 
 function App() {
   return (
@@ -11,16 +12,7 @@ function App() {
       <SolutionSection />
 
       {/* How It Works Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            How It Works
-          </h2>
-          <p className="text-center text-gray-400">
-            Coming soon...
-          </p>
-        </div>
-      </section>
+      <HowItWorksSection />
 
       {/* CTA Section */}
       <section id="cta" className="py-20 px-4 bg-bg-card">
